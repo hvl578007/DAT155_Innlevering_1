@@ -9,9 +9,9 @@ const Z_AXIS = 2;
 let view;
 
 /**
- * Initialise webGL for the cube.
+ * Initialise webGL for the tetrahedron.
  */
-class CubeGL {
+class TetrahedronGL {
 
     /**
      * Initialisation code.
@@ -73,7 +73,7 @@ class CubeGL {
         //
         //  Load shaders and initialize attribute buffers
         //
-        let program = initShaders(this._gl, "./shaders/vshadercube.glsl", "./shaders/fshadercube.glsl");
+        let program = initShaders(this._gl, "./shaders/vshadertetrahedron.glsl", "./shaders/fshadertetrahedron.glsl");
         this._gl.useProgram(program);
 
         let cBuffer = this._gl.createBuffer();
@@ -100,7 +100,7 @@ class CubeGL {
     }
 
     /**
-     * Update the cube.
+     * Update the tetrahedron.
      */
     update() {
         this._gl.clear(this._gl.COLOR_BUFFER_BIT | this._gl.DEPTH_BUFFER_BIT);

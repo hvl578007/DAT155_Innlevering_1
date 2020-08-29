@@ -1,16 +1,16 @@
 "use strict";
 
 /**
- * Controller for the cube project.
+ * Controller for the tetrahedron project.
  */
-class CubeController {
+class TetrahedronController {
 
     /**
-     * Creates a new CubeController object.
+     * Creates a new TetrahedronController object.
      */
     constructor() {
-        this._model = new CubeData();
-        this._view = new CubeGL(this._model);
+        this._model = new TetrahedronData();
+        this._view = new TetrahedronGL(this._model);
     }
 
     /**

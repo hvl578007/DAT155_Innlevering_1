@@ -1,9 +1,9 @@
 "use strict";
 
 /**
- * Geometry and colors for the cube.
+ * Geometry and colors for the tetrahedron.
  */
-class CubeData {
+class TetrahedronData {
 
     /**
      * Empty constructor.

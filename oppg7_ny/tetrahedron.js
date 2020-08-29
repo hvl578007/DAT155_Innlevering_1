@@ -7,8 +7,8 @@ let rotateXButton = document.getElementById("rotateX")
 let rotateYButton = document.getElementById("rotateY")
 let rotateZButton = document.getElementById("rotateZ")
 
-// Create a controller for the cube app
-let controller = new CubeController();
+// Create a controller for the Tetrahedron app
+let controller = new TetrahedronController();
 
 // listener functions
 // needed because a callback of a method don't work
