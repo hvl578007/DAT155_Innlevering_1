@@ -118,6 +118,7 @@ class CubeGL {
         //teiknar den store firkanten
         this._gl.drawArrays(this._gl.TRIANGLES, 0, this.numVertices);
 
+        //burde nok ha skalert først (sist i koden) og så flytta, men dette fungerer så...
         //skalerer ned
         modelViewMatrix = mult(r, scale(0.5, 0.5, 0.5));
         //flytter den opp
